@@ -82,7 +82,7 @@ export const healthCare = (informations, additional) => {
   return 0;
 };
 
-// To do - Return sick insurance tax
+// Return sick insurance tax
 export const sickInsurance = (informations, additional) => {
   if (additional.sickInsurance === true) {
     return singleZus("chorobowa", informations);
