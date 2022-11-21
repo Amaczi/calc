@@ -1,3 +1,12 @@
+// Return netto validation
+const nettoValidation = (informations) => {
+  if (informations.netto !== undefined) {
+    return informations.netto?.replace(",", ".");
+  } else {
+    return 0;
+  }
+};
+
 // Return rounded negative value with currency
 export const negativeCurrency = (value, currency) => {
   return `-${Math.round(value)} ${currency}`;
@@ -15,7 +24,7 @@ export const totalEarnings = (informations, expenses, additional) => {
 
 // Return total vat after deduction of tax
 export const totalVat = (informations, expenses) => {
-  const netto = informations.netto?.replace(",", ".");
+  const netto = nettoValidation(informations);
   const vat = informations.vat;
   const expensesVat = totalExpensesVat(expenses);
   return netto * vat - expensesVat;
@@ -29,7 +38,7 @@ export const singleVat = (expense) => {
     expense.vat !== undefined &&
     expense.category !== undefined
   ) {
-    const netto = expense.netto?.replace(",", ".");
+    const netto = nettoValidation(expense);
     const vat = expense.vat;
     if (expense.category === "other") return netto * vat;
     else return netto * vat * 0.5;
@@ -65,7 +74,7 @@ export const totalZus = (informations, additional) => {
 
 // To do - Return single ZUS
 export const singleZus = (name, informations) => {
-  const netto = informations.netto?.replace(",", ".");
+  const netto = nettoValidation(informations);
   const skladki = {
     emerytalna: 0.1952,
     rentowa: 0.08,
@@ -101,7 +110,7 @@ export const totalExpenses = (expenses) => {
       expense.vat !== undefined &&
       expense.category !== undefined
     ) {
-      const netto = expense.netto?.replace(",", ".");
+      const netto = nettoValidation(expense);
       total = total + Number(netto);
     }
   });
@@ -118,7 +127,7 @@ export const totalExpensesVat = (expenses) => {
       expense.vat !== undefined &&
       expense.category !== undefined
     ) {
-      const netto = expense.netto?.replace(",", ".");
+      const netto = nettoValidation(expense);
       const vat = expense.vat;
       if (expense.category === "other") total = total + Number(netto * vat);
       else total = total + Number(netto * vat) * 0.5;
