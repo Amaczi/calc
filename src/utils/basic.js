@@ -27,7 +27,8 @@ export const totalVat = (informations, expenses) => {
   const netto = nettoValidation(informations);
   const vat = informations.vat;
   const expensesVat = totalExpensesVat(expenses);
-  return netto * vat - expensesVat;
+  if (netto <= 0) return 0;
+  else return netto * vat - expensesVat;
 };
 
 // Return single expense VAT
