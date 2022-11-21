@@ -1,0 +1,29 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Control",
+      "scope": "#/properties/startZus",
+      "label": "ZUS na start",
+      "options": {
+        "toggle": true
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/smallZus",
+      "label": "Mały ZUS",
+      "options": {
+        "toggle": true
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/sickInsurance",
+      "label": "Ubezpieczenie chorobowe",
+      "options": {
+        "toggle": true
+      }
+    }
+  ]
+}

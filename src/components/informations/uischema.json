@@ -1,0 +1,25 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Control",
+      "scope": "#/properties/netto",
+      "label": "Miesięcznie Netto"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/vat",
+      "label": "Stawka Vat"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/taxation",
+      "label": "Forma Opodatkowania"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/currency",
+      "label": "Waluta"
+    }
+  ]
+}

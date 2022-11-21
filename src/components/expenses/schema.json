@@ -1,0 +1,54 @@
+{
+  "type": "object",
+  "properties": {
+    "expenses": {
+      "type": "array",
+      "title": "Dodaj wydatek",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "netto": {
+            "type": "string"
+          },
+          "vat": {
+            "type": "string",
+            "oneOf": [
+              {
+                "const": "0.05",
+                "title": "5%"
+              },
+              {
+                "const": "0.08",
+                "title": "8%"
+              },
+              {
+                "const": "0.23",
+                "title": "23%"
+              }
+            ]
+          },
+          "category": {
+            "type": "string",
+            "oneOf": [
+              {
+                "const": "private_car",
+                "title": "Samochód prywatny"
+              },
+              {
+                "const": "company_car",
+                "title": "Samochód służbowy"
+              },
+              {
+                "const": "other",
+                "title": "Inne wydatki"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

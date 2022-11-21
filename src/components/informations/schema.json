@@ -1,0 +1,65 @@
+{
+  "type": "object",
+  "properties": {
+    "netto": {
+      "type": "string",
+      "description": "Podaj przychód netto"
+    },
+    "vat": {
+      "oneOf": [
+        {
+          "const": "0.05",
+          "title": "5%"
+        },
+        {
+          "const": "0.08",
+          "title": "8%"
+        },
+        {
+          "const": "0.23",
+          "title": "23%"
+        }
+      ]
+    },
+    "taxation": {
+      "oneOf": [
+        {
+          "const": "12",
+          "title": "Ryczałt 12%"
+        },
+        {
+          "const": "8.5",
+          "title": "Ryczałt 8.5%"
+        },
+        {
+          "const": "19",
+          "title": "Liniówka 19%"
+        },
+        {
+          "const": "12/32",
+          "title": "Skala podatkowa 12%/32%"
+        },
+        {
+          "const": "5",
+          "title": "IP Box 5%"
+        }
+      ]
+    },
+    "currency": {
+      "oneOf": [
+        {
+          "const": "pln",
+          "title": "Złoty"
+        },
+        {
+          "const": "euro",
+          "title": "Euro"
+        },
+        {
+          "const": "usd",
+          "title": "Dolar"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "properties": {
+    "startZus": {
+      "type": "boolean"
+    },
+    "smallZus": {
+      "type": "boolean",
+      "description": "The \"toggle\" option renders boolean values as a toggle."
+    },
+    "sickInsurance": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Control",
+      "scope": "#/properties/expenses",
+      "options": {
+        "elementLabelProp": "name",
+        "detail": {
+          "type": "VerticalLayout",
+          "elements": [
+            {
+              "type": "Control",
+              "scope": "#/properties/name",
+              "label": "Nazwa wydatku"
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/netto",
+              "label": "Kwota Netto"
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/vat",
+              "label": "Stawka vat"
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/category",
+              "label": "Kategoria wydatku"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

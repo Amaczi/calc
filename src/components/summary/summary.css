@@ -1,0 +1,60 @@
+#summary {
+  width: calc(100% - 2rem);
+  background-color: white;
+  padding: 1rem;
+}
+
+#summary > h2 {
+  font-family: Mulish;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+#summary > span {
+  width: 100%;
+  height: 1px;
+  display: block;
+  margin: 0.75rem 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.summary_row {
+  width: calc(100% - 1rem);
+  padding: 0.25rem 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.summary_row_icon {
+  width: 15%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.summary_row_icon > svg {
+  height: 2rem;
+  display: block;
+}
+
+.summary_row_desc {
+  width: 65%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.summary_row_desc > p {
+  font-weight: 400;
+}
+
+.summary_row_value {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.summary_extra {
+  opacity: 0.75;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
