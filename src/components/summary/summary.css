@@ -58,3 +58,12 @@
   font-size: 0.875rem;
   font-weight: 500;
 }
+
+@media only screen and (max-width: 900px) {
+  .summary_row_desc {
+    width: 55%;
+  }
+  .summary_row_value {
+    width: 30%;
+  }
+}

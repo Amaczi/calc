@@ -69,13 +69,16 @@ export default function Summary({ informations, additional, expenses }) {
         value={positiveCurrency(totalVat(informations, expenses), currency)}
       />
       {expenses.map((expense, index) => {
-        return (
-          <SummaryExtra
-            key={index}
-            desc={expense.name}
-            value={negativeCurrency(singleVat(expense), currency)}
-          />
-        );
+        console.log(expense.name);
+        if (expense.name && expense.netto && expense.vat && expense.category) {
+          return (
+            <SummaryExtra
+              key={index}
+              desc={expense.name}
+              value={negativeCurrency(singleVat(expense), currency)}
+            />
+          );
+        }
       })}
       <SummaryRow
         icon={<KeyReturn size={32} color="#1976d2" weight="light" />}
