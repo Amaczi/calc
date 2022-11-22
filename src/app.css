@@ -20,12 +20,12 @@
   #calc_wrapper {
     width: calc(100% - 3rem);
     padding: 1.5rem;
-    max-width: unset;
     flex-direction: column;
   }
 
   .calc_column {
     width: 100%;
     margin: 0.5rem 0;
+    max-width: unset;
   }
 }
