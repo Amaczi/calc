@@ -14,8 +14,6 @@ import uischema from "./uischema.json";
 export default function Additional({ additional, setAdditional }) {
   return (
     <div id="additional">
-      <h2>Dodatkowe informacje</h2>
-      <span></span>
       <JsonForms
         schema={schema}
         uischema={uischema}

@@ -7,7 +7,7 @@
       "options": {
         "elementLabelProp": "name",
         "detail": {
-          "type": "VerticalLayout",
+          "type": "HorizontalLayout",
           "elements": [
             {
               "type": "Control",

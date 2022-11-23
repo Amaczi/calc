@@ -15,7 +15,6 @@ export default function Informations({ informations, setInformations }) {
   return (
     <div id="informations">
       <h2>Informacje</h2>
-      <span></span>
       <JsonForms
         schema={schema}
         uischema={uischema}

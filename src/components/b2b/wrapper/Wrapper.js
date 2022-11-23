@@ -34,21 +34,23 @@ export default function Wrapper() {
   const [additional, setAdditional] = useState(DEFAULT_ADDITIONAL);
   const [expenses, setExpenses] = useState(DEFAULT_EXPENSES);
   return (
-    <div id="calc_wrapper">
-      <div className="calc_column">
-        <Informations
-          informations={informations}
-          setInformations={setInformations}
-        />
-        <Additional additional={additional} setAdditional={setAdditional} />
-        <Expenses expenses={expenses} setExpenses={setExpenses} />
-      </div>
-      <div className="calc_column">
-        <Summary
-          informations={informations}
-          additional={additional}
-          expenses={expenses.expenses}
-        />
+    <div id="b2b_wrapper">
+      <div id="b2b_container">
+        <div className="b2b_column">
+          <Informations
+            informations={informations}
+            setInformations={setInformations}
+          />
+          <Additional additional={additional} setAdditional={setAdditional} />
+          <Expenses expenses={expenses} setExpenses={setExpenses} />
+        </div>
+        <div className="b2b_column">
+          <Summary
+            informations={informations}
+            additional={additional}
+            expenses={expenses.expenses}
+          />
+        </div>
       </div>
     </div>
   );

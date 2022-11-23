@@ -4,22 +4,17 @@
     {
       "type": "Control",
       "scope": "#/properties/netto",
-      "label": "Miesięcznie Netto"
+      "label": "Miesięcznie netto:"
     },
     {
       "type": "Control",
       "scope": "#/properties/vat",
-      "label": "Stawka Vat"
+      "label": "Stawka VAT:"
     },
     {
       "type": "Control",
       "scope": "#/properties/taxation",
-      "label": "Forma Opodatkowania"
-    },
-    {
-      "type": "Control",
-      "scope": "#/properties/currency",
-      "label": "Waluta"
+      "label": "Forma opodatkowania"
     }
   ]
 }

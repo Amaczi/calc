@@ -2,8 +2,7 @@
   "type": "object",
   "properties": {
     "netto": {
-      "type": "string",
-      "description": "Podaj przychód netto"
+      "type": "string"
     },
     "vat": {
       "oneOf": [
@@ -42,22 +41,6 @@
         {
           "const": "5",
           "title": "IP Box 5%"
-        }
-      ]
-    },
-    "currency": {
-      "oneOf": [
-        {
-          "const": "pln",
-          "title": "Złoty"
-        },
-        {
-          "const": "euro",
-          "title": "Euro"
-        },
-        {
-          "const": "usd",
-          "title": "Dolar"
         }
       ]
     }

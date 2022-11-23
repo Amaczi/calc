@@ -1,27 +1,40 @@
 #informations {
-  width: calc(100% - 2rem);
-  background-color: white;
-  padding: 1rem;
+  width: calc(100% - 1.5rem);
+  padding: 0.5rem 0.75rem;
 }
 
 #informations > h2 {
   font-family: Mulish;
+  font-weight: 700;
+}
+
+#informations > .MuiGrid-root {
+  margin-top: 0.5rem;
+}
+
+#informations .MuiInputBase-root {
+  padding-top: 0.25rem;
+}
+
+#informations .MuiInputBase-root > div > button > .MuiSvgIcon-root {
+  color: #c99486;
+}
+
+#informations .MuiInputLabel-root {
   font-weight: 600;
+  font-family: Mulish;
+  color: #9e9e9e;
 }
 
-#informations > span {
-  width: 100%;
-  height: 1px;
-  display: block;
-  margin: 0.75rem 0;
-  background-color: rgba(0, 0, 0, 0.1);
+#informations .MuiInputBase-root::before {
+  border-bottom: 1px solid #c99486;
 }
 
-#informations > .MuiGrid-container {
-  width: calc(100% - 1rem);
-  padding: 0 0.5rem;
+#informations .MuiInputBase-root:after {
+  border-bottom: 2px solid #c99486;
 }
 
-#informations > .MuiGrid-container > .MuiGrid-item {
-  margin: 0.25rem 0 0.5rem;
+.MuiAutocomplete-listbox > .Mui-focused,
+.MuiAutocomplete-option[aria-selected="true"] {
+  background-color: rgba(241, 223, 218, 0.5) !important;
 }

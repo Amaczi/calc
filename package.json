@@ -7,6 +7,7 @@
     "@jsonforms/examples": "^3.0.0",
     "@jsonforms/material-renderers": "^3.0.0",
     "@jsonforms/react": "^3.0.0",
+    "@jsonforms/vanilla-renderers": "^3.0.0",
     "@mui/icons-material": "^5.10.14",
     "@mui/material": "^5.10.14",
     "@mui/x-date-pickers": "^5.0.8",

@@ -1,19 +1,31 @@
 #additional {
-  width: calc(100% - 2rem);
-  background-color: white;
-  padding: 1rem;
-  height: auto;
+  width: calc(100% - 1.5rem);
+  padding: 0.5rem 0.75rem;
 }
 
-#additional > h2 {
-  font-family: Mulish;
-  font-weight: 600;
+#additional .MuiSwitch-track {
+  background-color: #efd9d3;
+  border-radius: 12px;
 }
 
-#additional > span {
-  width: 100%;
-  height: 1px;
-  display: block;
-  margin: 0.75rem 0;
-  background-color: rgba(0, 0, 0, 0.1);
+#additional .MuiSwitch-root {
+  padding: 12px;
+  width: 62px;
+  height: 42px;
+}
+
+#additional .MuiSwitch-thumb {
+  width: 14px;
+  height: 14px;
+  margin: 5px;
+  color: white;
+}
+
+#additional .MuiTouchRipple-root {
+  color: #c99486;
+}
+
+#additional .Mui-checked:hover,
+#additional .MuiSwitch-switchBase:hover {
+  background-color: rgba(201, 148, 134, 0.15);
 }
