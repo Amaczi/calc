@@ -31,12 +31,17 @@
 @media only screen and (max-width: 1000px) {
   #b2b_container {
     flex-direction: column;
-    margin: 2.5rem;
+    margin: 1.75rem 1.5rem;
+  }
+
+  #b2b_container {
+    padding: 0.5rem;
   }
 
   .b2b_column {
     width: 100%;
     margin: 0.5rem 0;
+    padding: 0;
     max-width: unset;
   }
 }

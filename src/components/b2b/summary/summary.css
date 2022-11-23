@@ -49,3 +49,19 @@
 .summary_extra > .summary_row_value > p {
   font-weight: 600;
 }
+
+@media only screen and (max-width: 1000px) {
+  .summary_row {
+    width: calc(100% - 0.5rem);
+  }
+
+  .summary_extra {
+    width: calc(100% - 1rem);
+    margin-inline: auto;
+  }
+
+  .summary_row_desc > p,
+  .summary_row_value > p {
+    font-size: 0.875rem;
+  }
+}

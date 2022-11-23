@@ -178,3 +178,30 @@
   > .child-controls {
   width: 20%;
 }
+
+@media only screen and (max-width: 1000px) {
+  #expenses_legend {
+    font-size: 0.875rem;
+  }
+
+  .expenses_legend_small {
+    width: 7% !important;
+  }
+
+  .expenses_legend_medium {
+    width: 16.5% !important;
+  }
+
+  .expenses_legend_large {
+    width: 30% !important;
+  }
+
+  #expenses
+    > .vertical-layout
+    > .vertical-layout-item
+    > .array-control-layout
+    > header
+    > button {
+    font-size: 0.875rem;
+  }
+}
