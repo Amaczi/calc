@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "properties": {
+    "jan": {
+      "type": "string",
+      "description": "Wynagrodzenie w styczniu"
+    },
+    "feb": {
+      "type": "string",
+      "description": "Wynagrodzenie w lutym"
+    },
+    "mar": {
+      "type": "string",
+      "description": "Wynagrodzenie w marcu"
+    },
+    "apr": {
+      "type": "string",
+      "description": "Wynagrodzenie w kwietniu"
+    },
+    "may": {
+      "type": "string",
+      "description": "Wynagrodzenie w maju"
+    },
+    "jun": {
+      "type": "string",
+      "description": "Wynagrodzenie w czerwcu"
+    },
+    "jul": {
+      "type": "string",
+      "description": "Wynagrodzenie w lipcu"
+    },
+    "aug": {
+      "type": "string",
+      "description": "Wynagrodzenie w sierpniu"
+    },
+    "sep": {
+      "type": "string",
+      "description": "Wynagrodzenie w wrześniu"
+    },
+    "oct": {
+      "type": "string",
+      "description": "Wynagrodzenie w październiku"
+    },
+    "nov": {
+      "type": "string",
+      "description": "Wynagrodzenie w listopadzie"
+    },
+    "dec": {
+      "type": "string",
+      "description": "Wynagrodzenie w grudniu"
+    }
+  }
+}

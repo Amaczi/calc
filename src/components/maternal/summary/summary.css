@@ -1,0 +1,25 @@
+#maternal_summary {
+  width: calc(100% - 2rem);
+  background-color: white;
+  padding: 1rem;
+}
+
+#maternal_summary > h2 {
+  font-family: Mulish;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+#maternal_summary > span {
+  width: 100%;
+  height: 1px;
+  display: block;
+  margin: 0.75rem 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#maternal_summary > p {
+  font-weight: 500;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}

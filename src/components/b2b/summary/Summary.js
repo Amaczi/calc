@@ -4,9 +4,8 @@ import "./summary.css";
 
 // Components & Other imports
 import { Money, Coins, Receipt, Bank, KeyReturn } from "phosphor-react";
+import { negativeCurrency, positiveCurrency } from "../../../utils/basic";
 import {
-  negativeCurrency,
-  positiveCurrency,
   totalEarnings,
   totalVat,
   singleVat,
@@ -17,7 +16,7 @@ import {
   sickInsurance,
   totalExpensesVat,
   totalExpenses,
-} from "../../utils/basic";
+} from "../../../utils/b2b";
 
 function SummaryRow({ icon, desc, value }) {
   return (
@@ -69,7 +68,6 @@ export default function Summary({ informations, additional, expenses }) {
         value={positiveCurrency(totalVat(informations, expenses), currency)}
       />
       {expenses.map((expense, index) => {
-        console.log(expense.name);
         if (expense.name && expense.netto && expense.vat && expense.category) {
           return (
             <SummaryExtra

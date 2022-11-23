@@ -1,0 +1,46 @@
+#earnings {
+  width: calc(100% - 2rem);
+  background-color: white;
+  padding: 1rem;
+  height: auto;
+}
+
+#earnings > h2 {
+  font-family: Mulish;
+  font-weight: 600;
+}
+
+#earnings > p {
+  font-weight: 500;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+#earnings > span {
+  width: 100%;
+  height: 1px;
+  display: block;
+  margin: 0.75rem 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#earnings > .MuiGrid-container {
+  flex-direction: row;
+}
+
+#earnings > .MuiGrid-container > .MuiGrid-item {
+  width: 50%;
+  flex-basis: auto;
+  padding: 0 0.5rem;
+  margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #earnings > .MuiGrid-container {
+    flex-direction: column;
+  }
+
+  #earnings > .MuiGrid-container > .MuiGrid-item {
+    width: 100%;
+  }
+}

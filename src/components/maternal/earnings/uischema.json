@@ -1,0 +1,65 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Control",
+      "scope": "#/properties/jan",
+      "label": "Styczeń"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/feb",
+      "label": "Luty"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/mar",
+      "label": "Marzec"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/apr",
+      "label": "Kwiecień"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/may",
+      "label": "Maj"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/jun",
+      "label": "Czerwiec"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/jul",
+      "label": "Lipiec"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/aug",
+      "label": "Sierpień"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/sep",
+      "label": "Wrzesień"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/oct",
+      "label": "Październik"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/nov",
+      "label": "Listopad"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/dec",
+      "label": "Grudzień"
+    }
+  ]
+}
